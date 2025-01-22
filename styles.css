@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f6fbff1b;
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.title {
+    padding: 10px;
+    font-size: 18px; /* Reduced font size for mobile */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    background-color: #f6fbff1b;
+}
+
+/* Project Section Styles */
+.flex-box {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: center;
+    gap: 20px; /* Adds spacing between items */
+    border-bottom: 1px solid #00000044;
+    padding-bottom: 20px;
+    margin-top: 2.5rem;
+}
+
+.project- {
+    padding: 10px;
+    margin-top: 18px;
+    text-align: center; /* Center-align content */
+}
+
+.project- h2 {
+    font-size: 24px; /* Reduced font size for better scaling */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #00ffd5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-container {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 480px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Project Image */
+.project-left {
+    width: 100%;
+    max-width: 300px; /* Limit the max width for large images */
+    height: auto;
+    border-radius: 7px;
+    border: 1px solid #00000067;
+    background-color: #a9a9a93a;
+    transition: transform 0.2s ease, box-shadow 0.2s;
+}
+
+.project-left img {
+    width: 100%; /* Ensures image is responsive */
+    height: auto;
+    border-radius: 7px;
+}
+
+.project-left:hover {
+    border: none;
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 5px black;
+}
+
+/* Project Description */
+.project-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border-left: none; /* Remove unnecessary borders for mobile */
+}
+
+.project-right input {
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+}
+
+/* Toggle Buttons */
+.toggle-btns {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons on small screens */
+    gap: 10px;
+    justify-content: center;
+}
+
+.toggle-btn {
+    padding: 7px 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.toggle-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+hr{
+    height: 470px;
+    margin-top: 20px;
+}
+
+.flex-box2 {
+    display: none;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .flex-box {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .project-container {
+        width: 100%;
+    }
+
+    .project- h2 {
+        font-size: 20px; /* Adjust title font size */
+    }
+
+    .toggle-btns {
+        margin-top: 10px;
+    }
+
+    .toggle-btn {
+        width: 100%; /* Full width for mobile buttons */
+        max-width: 200px;
+        margin: 5px auto;
+    }
+
+    hr{
+        display: none;
+    }
+}
